@@ -12,15 +12,20 @@ import {
   BsFillGearFill,
 } from "react-icons/bs";
 
-const Sidebar = () => {
+const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
   return (
-    <aside>
+    <aside
+      id="sidebar"
+      className={openSidebarToggle ? "sidebar-responsive" : ""}
+    >
       <div className="sidebar-title">
         <div className="sidebar-brand">
           <BsCart3 className="icon" />
           SHOP
         </div>
-        <span className="icon close_icon">X</span>
+        <span className="icon close_icon" onClick={OpenSidebar}>
+          X
+        </span>
       </div>
       <ul className="sidebar-list">
         <li className="sidebar-list-item">

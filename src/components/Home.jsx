@@ -108,7 +108,7 @@ const Home = () => {
         </div>
       </div>
       <div className="charts">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height={300}>
           <BarChart
             width={500}
             height={300}
@@ -137,7 +137,7 @@ const Home = () => {
             />
           </BarChart>
         </ResponsiveContainer>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height={300}>
           <LineChart
             width={500}
             height={300}
